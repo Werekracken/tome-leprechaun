@@ -18,6 +18,8 @@ Pot o' Gold - Passively increase Physical, Mental and Spell Saves based on the a
 Lucky by Design - Passively increase confusion resistance and improves the contribution of primary stats on infusions and runes. At level 5 you are instantly granted a new inscription slot without needing to spend a category point.
 Too Clever by Half - Activate to remove detrimental effects and heal yourself.
 
+https://github.com/Werekracken/tome-leprechaun
+
 ---Changelog
 v1.0.0
 Initial release
