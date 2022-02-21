@@ -23,9 +23,9 @@ newTalent{
 	cooldown = function(self, t) return math.ceil(self:combatTalentLimit(t, 5, 45, 25, false, 1.0)) end, -- Limit >5
 	getParams = function(self, t)
 		return {
-			crit = self:combatStatScale("cun", 15, 60, 0.75),
+			def = self:combatStatScale("cun", 15, 60, 0.75),
 			--save = self:combatStatScale("cun", 15, 60, 0.75),
-			def = self:combatTalentScale(t, 5, 20),
+			crit = self:combatTalentScale(t, 5, 20),
 			}
 	end,
 	tactical = { ATTACK = 2 },
@@ -35,8 +35,8 @@ newTalent{
 	end,
 	info = function(self, t)
 		local params = t.getParams(self, t)
-		return ([[Call upon the luck and cunning of leprechauns to increase your critical strike chance by %d%% and your defense and defense against projectiles by %d for 5 turns.
-		The critical strike chance bonus will increase with your Cunning.]]):
+		return ([[Call upon the luck and cunning of leprechauns to increase your critical strike chance by %d%%, and your defense and defense against projectiles by %d for 5 turns.
+		The defense bonus will increase with your Cunning.]]):
 		tformat(params.crit, params.def)
 	end,
 }
@@ -99,7 +99,7 @@ newTalent{
 	no_energy = true,
 	cooldown = function(self, t) return math.ceil(self:combatTalentLimit(t, 10, 45, 25, false, 1.0)) end, -- Limit to >10
 	remcount  = function(self,t) return math.ceil(self:combatTalentScale(t, 0.5, 3, "log", 0, 3)) end,
-	heal = function(self, t) return 50+self:combatTalentStatDamage(t, "cun", 100, 500) end,
+	heal = function(self, t) return 50+self:combatTalentStatDamage(t, "cun", 50, 250) end,
 	tactical = { HEAL = 1, CURE = function(self, t, target)
 		local nb = 0
 		for eff_id, p in pairs(self.tmp) do
