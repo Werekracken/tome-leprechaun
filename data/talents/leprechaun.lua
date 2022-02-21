@@ -99,7 +99,7 @@ newTalent{
 	no_energy = true,
 	cooldown = function(self, t) return math.ceil(self:combatTalentLimit(t, 10, 45, 25, false, 1.0)) end, -- Limit to >10
 	remcount  = function(self,t) return math.ceil(self:combatTalentScale(t, 0.5, 3, "log", 0, 3)) end,
-	heal = function(self, t) return 50+self:combatTalentStatDamage(t, "cun", 100, 500) end,
+	heal = function(self, t) return 50+self:combatTalentStatDamage(t, "cun", 50, 250) end,
 	tactical = { HEAL = 1, CURE = function(self, t, target)
 		local nb = 0
 		for eff_id, p in pairs(self.tmp) do

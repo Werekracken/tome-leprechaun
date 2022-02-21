@@ -19,5 +19,5 @@ Stat modifiers: -3 Strength, +3 Magic, +3 Cunning, and +10 Luck
 
 ## Changelog
 
-v1.0.0
-Initial release
+v1.0.0 Initial release
+v1.0.1 Playtest balance tweaks. Flipped crit chance and defence on Luck of the Leprechaun. Nerfed healing on Too Clever.
