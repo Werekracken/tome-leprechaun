@@ -11,10 +11,8 @@ newBirthDescriptor {
 		_t"#LIGHT_BLUE# * +3 Magic, +0 Willpower, +3 Cunning",
 		_t"#LIGHT_BLUE# * +10 Luck",
 		_t"#GOLD#Life per level:#LIGHT_BLUE# 12",
-		_t"#GOLD#Experience penalty:#LIGHT_BLUE# 10%",
     },
     inc_stats = { str=-3, mag=3, con=1, cun=3, lck=10, },
-    experience = 1.10,
 	talents_types = {
         ["race/leprechaun"]={true, 0}
     },

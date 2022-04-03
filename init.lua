@@ -2,7 +2,7 @@ long_name = "Race: Leprechaun"
 short_name = "leprechaun"
 for_module = "tome"
 version = {1,7,4}
-addon_version = {1,0,1}
+addon_version = {1,0,2}
 weight = 2000
 author = {"Werekracken"}
 tags = {"Race", "race", "Leprechaun", "leprechaun"}
@@ -20,9 +20,10 @@ Too Clever by Half - Activate to remove detrimental effects and heal yourself.
 
 https://github.com/Werekracken/tome-leprechaun
 
----Changelog
-v1.0.0 Initial release
-v1.0.1 Playtest balance tweaks. Flipped crit chance and defence on Luck of the Leprechaun. Nerfed healing on Too Clever.
+Changelog
+- v1.0.0 Initial release
+- v1.0.1 Playtest balance tweaks. Flipped crit chance and defense on Luck of the Leprechaun. Nerfed healing on Too Clever.
+- v1.0.2 Remove the exp penalty because they are not OP.
 ]]
 overload = true
 superload = false
